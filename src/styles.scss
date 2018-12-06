@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/scss/bootstrap';
+
+.color {
+    &-light {
+        &-green {
+            color: rgb(215, 223, 34);
+        }
+    }
+}
