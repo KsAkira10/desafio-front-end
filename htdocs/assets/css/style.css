@@ -78,6 +78,20 @@
     background-color:rgb(239,239,239);
 }
 
+.main {
+    width: 464px;
+    height: 260px;
+}
+
+.second {
+    width: 450px;
+    height: 216px;
+}
+
+.third {
+    width: 216px;
+    height: 260px;
+}
 
 @media (min-width: 576px) {
     .navbar {
