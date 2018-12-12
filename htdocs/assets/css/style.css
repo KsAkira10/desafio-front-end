@@ -79,8 +79,30 @@
 }
 
 .main {
-    width: 464px;
-    height: 260px;
+    position: relative;
+    width: 320px;
+    height: 336px;
+}
+
+.main-image {
+    position: relative;
+    width: 320px;
+    height: 179px;
+}
+
+.shadow-layer {
+    background-image: url('../media/shadow-layer.png');
+    width: 320px;
+    height: 179px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.shadow-layer > .btn-shared {
+    position: absolute;
+    left: 90%;
+    top: 5%;
 }
 
 .second {
@@ -93,6 +115,33 @@
     height: 260px;
 }
 
+.news-label {
+    color: #004861;
+    font-family: Arial;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.news-title-main {
+    font-family: Arial;
+    font-size: 21px;
+    font-weight: bold;
+    color: #090909;
+}
+.news-description-main {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #090909;
+
+}
 @media (min-width: 576px) {
     .navbar {
         height: 100px;
@@ -138,5 +187,69 @@
     .footer-mobile {
         height: 84px;
         display: none!important;
+    }
+
+    .main {
+        position: relative;
+        width: 464px;
+        height: 260px;
+    }
+    
+    .main-image {
+        position: relative;
+        width: 464px;
+        height: 260px;
+    }
+
+    .main-news {
+        position: absolute;
+        top: 50%;
+    }
+
+    .news-label {
+        color: white;
+        font-family: Arial;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    
+    .news-title-main {
+        font-family: Arial;
+        font-size: 21px;
+        font-weight: bold;
+        color: white;
+    }
+    .news-description-main {
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: white;
+    
+    }
+    
+    .shadow-layer {
+        background-image: url('../media/shadow-layer.png');
+        width: 464px;
+        height: 260px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .second {
+        width: 450px;
+        height: 216px;
+    }
+    
+    .third {
+        width: 216px;
+        height: 260px;
     }
 }
