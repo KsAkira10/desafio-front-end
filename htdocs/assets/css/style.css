@@ -80,20 +80,22 @@
 
 .main {
     position: relative;
-    width: 320px;
-    height: 336px;
+    /* width: 464px;
+    height: 260px; */
+    width: 100%;
+    height: auto;
 }
 
 .main-image {
     position: relative;
-    width: 320px;
-    height: 179px;
+    width: 100%;
+    height: auto;
 }
 
 .shadow-layer {
     background-image: url('../media/shadow-layer.png');
-    width: 320px;
-    height: 179px;
+    width: 100%;
+    height: auto;
     position: absolute;
     top: 0;
     left: 0;
@@ -103,6 +105,7 @@
     position: absolute;
     left: 90%;
     top: 5%;
+    padding-top: 1rem;
 }
 
 .second {
@@ -142,7 +145,18 @@
     color: #090909;
 
 }
-@media (min-width: 576px) {
+
+@media (min-width: 768px) {
+    .news-title-main {
+        font-size: 16px;
+    }
+
+    .news-description-main {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 992px) {
     .navbar {
         height: 100px;
         max-width: 100%;
@@ -191,14 +205,14 @@
 
     .main {
         position: relative;
-        width: 464px;
-        height: 260px;
+        /* width: 464px;
+        height: 260px; */
     }
     
     .main-image {
         position: relative;
-        width: 464px;
-        height: 260px;
+        /* width: 464px;
+        height: 260px; */
     }
 
     .main-news {
@@ -236,11 +250,18 @@
     
     .shadow-layer {
         background-image: url('../media/shadow-layer.png');
-        width: 464px;
-        height: 260px;
+        /* width: 464px;
+        height: 260px; */
         position: absolute;
         top: 0;
         left: 0;
+    }
+
+    .shadow-layer > .btn-shared {
+        position: absolute;
+        left: 90%;
+        top: 5%;
+        padding-top: 1rem;
     }
     
     .second {

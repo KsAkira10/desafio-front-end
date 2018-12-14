@@ -28,9 +28,9 @@
             <span class="empty-item"></span>
         </nav>
     </header>
-    <main class="container-fluid p-md-3">
-        <section class="row">
-            <div class="col-md-6 col-12 px-0 px-md-3 mb-4 mb-md-0" ng-repeat="(key, news) in vm.main">
+    <main class="container p-0">
+        <section class="row mx-auto">
+            <div class="col-md-6 col-12 p-0 p-md-2 p-lg-3" ng-repeat="(key, news) in vm.main">
                 <div class="main">
                     <img class="main-image" src="assets/media/{{news.image}}" alt="{{news.description}}">
                     <div class="shadow-layer">
@@ -38,7 +38,7 @@
                             <img src="assets/images/share-white.png" width="24px" height="20px" alt="compartilhar" srcset="assets/images/share-white@2x.png 2x, assets/images/share-white@3x.png 3x">
                         </a>
                     </div>
-                    <article class="main-news px-3 pt-2 pb-0" id="main{{news.label}}{{key}}">
+                    <article class="main-news px-3 pt-2 pb-0 py-md-0" id="main{{news.label}}{{key}}">
                         <label for="main{{news.label}}{{key}}" class="news-label">{{news.label}}</label>
                         <h1 class="news-title-main">{{news.title}}</h1>
                         <p class="news-description-main">
