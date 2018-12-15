@@ -35,7 +35,8 @@
                     <img class="main-image" src="assets/media/{{news.image}}" alt="{{news.description}}">
                     <div class="shadow-layer">
                         <a href="{{news.url}}" class="btn-shared">
-                            <img src="assets/images/share-white.png" width="24px" height="20px" alt="compartilhar" srcset="assets/images/share-white@2x.png 2x, assets/images/share-white@3x.png 3x">
+                            <img src="assets/images/share-white.png" width="24px" height="20px" alt="compartilhar"
+                                srcset="assets/images/share-white@2x.png 2x, assets/images/share-white@3x.png 3x">
                         </a>
                     </div>
                     <article class="main-news px-3 pt-2 pb-0 py-md-0" id="main{{news.label}}{{key}}">
@@ -48,12 +49,41 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="row">
-            <div class="col-md-6 col-12" ng-repeat="(key, news) in vm.second">
-                <div class="second"></div>
+        <section class="row mx-auto">
+            <div class="col-md-6 col-12 second-border" ng-repeat="(key, news) in vm.second">
+                <div class="second my-2 p-2">
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="col-12">
+                                <img class="second-img" src="assets/media/{{news.image}}" alt="{{news.description}}">
+                            </div>
+                            <div class="col-12">
+                                <a href="{{news.url}}" class="btn-shared">
+                                    <img src="assets/images/share.png" width="24px" height="20px" alt="compartilhar"
+                                        srcset="assets/images/share@2x.png 2x, assets/images/share@3x.png 3x">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-7 px-0">
+                            <article class="second-news" id="second{{news.label}}{{key}}">
+                                <label for="second{{news.label}}{{key}}" class="news-label">{{news.label}}</label>
+                                <h1 class="news-title-second">{{news.title}}</h1>
+                                <p class="news-description-second">
+                                    {{news.description}}
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5">
+
+                        </div>
+                        <div class="col-7"></div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="row">
+        <!-- <section class="row">
             <div class="col-md-3 col-12" ng-repeat="(key, news) in vm.third">
                 <div class="third"></div>
             </div>
